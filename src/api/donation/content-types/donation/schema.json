@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "donations",
+  "info": {
+    "singularName": "donation",
+    "pluralName": "donations",
+    "displayName": "donation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "biginteger"
+    },
+    "is_verified": {
+      "type": "boolean"
+    },
+    "receipt": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "method": {
+      "type": "enumeration",
+      "enum": [
+        "usd",
+        "gift card"
+      ]
+    }
+  }
+}
