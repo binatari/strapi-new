@@ -1,19 +1,19 @@
-"use strict";
+'use strict';
 
 /**
- * donation controller
+ * withdrawal controller
  */
 
-const { createCoreController } = require("@strapi/strapi").factories;
+const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController("api::donation.donation", {
+module.exports = createCoreController('api::withdrawal.withdrawal',  {
   async create(ctx) {
     const user = ctx.state.user;
 
     const donation = await super.create(ctx);
 
     const updated = await strapi.entityService.update(
-      "api::donation.donation",
+      "api::withdrawal.withdrawal",
       donation.data.id,
       {
         data: {

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "donation",
     "pluralName": "donations",
-    "displayName": "donation",
+    "displayName": "deposit",
     "description": ""
   },
   "options": {
@@ -35,6 +35,12 @@
         "usd",
         "gift card"
       ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "donations"
     }
   }
 }

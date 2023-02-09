@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "withdrawals",
+  "info": {
+    "singularName": "withdrawal",
+    "pluralName": "withdrawals",
+    "displayName": "withdrawal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "biginteger"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "withdrawals"
+    }
+  }
+}
