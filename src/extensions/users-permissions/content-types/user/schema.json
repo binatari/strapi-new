@@ -80,6 +80,18 @@
       "relation": "oneToMany",
       "target": "api::withdrawal.withdrawal",
       "mappedBy": "user"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
     }
   }
 }
