@@ -44,6 +44,9 @@
     },
     "voucher_code": {
       "type": "string"
+    },
+    "voucher_type": {
+      "type": "string"
     }
   }
 }
