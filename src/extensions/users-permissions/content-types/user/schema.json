@@ -92,6 +92,10 @@
     },
     "country": {
       "type": "string"
+    },
+    "currency": {
+      "type": "string",
+      "default": "$"
     }
   }
 }
