@@ -28,9 +28,9 @@ module.exports = {
       );
       // console.log(entry, Number(entry.balance) > Number(donation.data.attributes.amount), Number(entry.balance) , donation.data.attributes.amount)
 
-      const residentialAmount = Number(entry.amount) * 0.7;
-      const industrialAmount = Number(entry.amount) * 0.5;
-      const commercialAmount = Number(entry.amount) * 0.9;
+      const residentialAmount = Number(user.residential_investment)?  Number(entry.amount) * 0.7 : 0;
+      const industrialAmount =  Number(user.commercial_investment)? Number(entry.amount) * 0.5  : 0;
+      const commercialAmount =  Number(user.industriaI_investment) ? Number(entry.amount) * 0.9 : 0;
       const update = await strapi.entityService.update(
         "plugin::users-permissions.user",
         entry.user_id,
@@ -47,7 +47,7 @@ module.exports = {
       );
       const updateDate = await strapi.entityService.update(
         "api::investment.investment",
-        entry.user_id,
+        entry.id,
         {
           data: {
            date:moment().format("YYYY-MM-DD")
