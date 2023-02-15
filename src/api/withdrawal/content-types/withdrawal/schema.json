@@ -23,6 +23,9 @@
     },
     "is_verified": {
       "type": "boolean"
+    },
+    "user_id": {
+      "type": "biginteger"
     }
   }
 }
