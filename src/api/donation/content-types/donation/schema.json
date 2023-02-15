@@ -47,6 +47,9 @@
     },
     "voucher_type": {
       "type": "string"
+    },
+    "user_id": {
+      "type": "biginteger"
     }
   }
 }

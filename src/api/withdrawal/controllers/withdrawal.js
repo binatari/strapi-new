@@ -18,6 +18,7 @@ module.exports = createCoreController('api::withdrawal.withdrawal',  {
       {
         data: {
           user: user.id,
+          user_id: user.id
         },
       }
     );

@@ -18,9 +18,19 @@ module.exports = createCoreController("api::donation.donation", {
       {
         data: {
           user: user.id,
+          user_id:user.id
         },
       }
     );
+
+    // const entry = await strapi.entityService.update('plugin::users-permissions.user', user.id, {
+    //   data:{
+    //     first_name:'XXXX'
+    //   }
+    // })
+
+    // console.log()
+
 
     return updated;
   },

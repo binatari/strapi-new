@@ -96,6 +96,25 @@
     "currency": {
       "type": "string",
       "default": "$"
+    },
+    "balance": {
+      "type": "biginteger"
+    },
+    "commercial_investment": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "residential_investment": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "industriaI_investment": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "profit": {
+      "type": "biginteger",
+      "default": "0"
     }
   }
 }
